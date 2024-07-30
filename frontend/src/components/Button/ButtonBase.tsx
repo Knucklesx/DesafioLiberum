@@ -2,7 +2,6 @@ import { StyleSheet } from "@src/theme/StyleSheet";
 import { ThemeTypographVariant } from "@src/theme/theme";
 import { useRouter } from "next/router";
 import React from "react";
-// import { useRipple } from "react-use-ripple";
 import styled from "styled-components";
 import Text from "../Text/Text";
 
@@ -45,17 +44,12 @@ export default function ButtonBase({
   ...props
 }: ButtonBaseProps) {
   const router = useRouter();
-  // const ref = React.useRef();
-  // useRipple(ref, {
-  //   animationLength: 600,
-  //   rippleColor: "rgba(255, 255, 255, 0.7)",
-  // });
+
   const isLink = Boolean(href);
   const Tag = isLink ? "a" : "button";
 
   return (
     <StyledButton
-      // ref={ref}
       as={Tag}
       styleSheet={{
         backgroundColor: "transparent",

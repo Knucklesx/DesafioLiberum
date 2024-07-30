@@ -22,7 +22,6 @@ export default function Icon({ size = "md", name, ...props }: IconProps) {
 
   return (
     <BaseComponent
-      // as="svg"
       styleSheet={{ width: iconSizes[size], height: iconSizes[size] }}
       color="inherit"
       fill="currentColor"

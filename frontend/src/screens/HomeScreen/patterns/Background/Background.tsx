@@ -6,7 +6,6 @@ export default function Background() {
   return (
     <Box
       styleSheet={{
-        // backgroundColor: theme.colors.primary.x100,
         width: "100%",
         height: "100%",
         backgroundPosition: "center",

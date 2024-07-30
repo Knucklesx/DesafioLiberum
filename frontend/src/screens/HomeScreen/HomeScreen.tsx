@@ -53,13 +53,9 @@ export default function HomeScreen() {
             top: "70px",
             right: "20px",
             display: "flex",
-
-            // marginTop: "1px",
           }}
         >
           <Feed>
-            {/* <Feed.Post />*/}
-            {/* <Feed.Post />*/}
             <Feed.container />
           </Feed>
         </Box>

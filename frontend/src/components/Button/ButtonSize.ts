@@ -18,7 +18,6 @@ export const buttonSize = {
   md: {
     borderRadius: "8px",
     paddingTop: "10px",
-    // paddingBottom: "10px",
     paddingLeft: "14px",
     paddingRight: "14px",
   },

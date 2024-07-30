@@ -67,8 +67,6 @@ Feed.container = function FeedContainer() {
   }, []);
 
   useEffect(() => {
-    // regext to keep only number or word
-
     const parsedSearchTerm = searchTerm.replace(/\W/g, "").toLowerCase();
     console.log("parsedSearchTerm", parsedSearchTerm);
     if (parsedSearchTerm.length < 3) {
@@ -92,17 +90,6 @@ Feed.container = function FeedContainer() {
 
     setFilteredEmpresas(empresasResult);
   }, [searchTerm, empresas]);
-
-  // const filteredEmpresas = empresas.filter((empresa) => {
-  //   const matchRazaoSocial = empresa.razao_social
-  //     .toLowerCase()
-  //     .includes(searchTerm.toLowerCase());
-  //   const matchCnpj = removeCnpjMask(empresa.cnpj).includes(
-  //     searchTerm.replace(/\D/g, "")
-  //   );
-
-  //   return matchRazaoSocial || matchCnpj;
-  // });
 
   const indexOfLastEmpresa = currentPage * empresasPerPage;
   const indexOfFirstEmpresa = indexOfLastEmpresa - empresasPerPage;

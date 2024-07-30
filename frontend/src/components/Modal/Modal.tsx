@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Button from "../Button/Button";
 
@@ -41,12 +40,6 @@ function ModalNew({
         </Modal.Header>
         <Modal.Body>{LowerText}</Modal.Body>
         <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button> */}
           <Button
             onClick={() => setIsDeleteModalOpen(false)}
             variant="outlined"
