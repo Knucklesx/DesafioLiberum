@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    container_name: postgres_container
+    environment:
+      POSTGRES_DB: liberumdb
+      POSTGRES_USER: liberum
+      POSTGRES_PASSWORD: liberum
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
